@@ -1,12 +1,14 @@
 .square {
-    height: 65px;
-    width: 65px;
+
     background-color:lightgray;
 }
 
 #container {
     display:flex;
     justify-content: center;
+    height:1000px;
+    width:1000px;
+    margin:auto;
 }
 
 .square:hover {
