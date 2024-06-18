@@ -14,3 +14,8 @@
 .square:hover {
     background-color: gray;
 }
+
+.changeSize {
+    text-align: center;
+    margin:10px;
+}

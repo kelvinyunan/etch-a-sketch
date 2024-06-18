@@ -1,4 +1,5 @@
 const canvasHolder = document.getElementById('container');
+const sizePicker = document.getElementById('changeBtn')
 
 function createCanvas(row,col) {
     
@@ -18,3 +19,16 @@ function createCanvas(row,col) {
     }
 }
 createCanvas(100,100);
+
+sizePicker.addEventListener('click', ()=>{
+    const newGridSize = parseInt(prompt('Enter the new canvas size'));
+
+    if (isNaN(newGridSize)) {
+        alert('Please enter a valid number from 1-100');
+    } else if (newGridSize < 1 || newGridSize > 100) {
+        alert('The number can only be 1-100');
+    } else {
+        canvasHolder.innerHTML = "";
+        createCanvas(newGridSize,newGridSize);
+    }
+})
