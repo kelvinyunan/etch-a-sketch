@@ -24,6 +24,7 @@ function createCanvas(row,col) {
             });
             pixel.addEventListener('mousedown',()=>{
                 isMousePressed = !isMousePressed;
+                event.preventDefault()
                 pixel.style.backgroundColor = "black";
                 
             });
@@ -49,4 +50,8 @@ sizePicker.addEventListener('click', ()=>{
         canvasHolder.innerHTML = "";
         createCanvas(newGridSize,newGridSize);
     }
+})
+
+canvasHolder.addEventListener('mouseleave',()=>{
+    isMousePressed = false;
 })
