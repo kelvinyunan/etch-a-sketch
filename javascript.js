@@ -55,3 +55,5 @@ sizePicker.addEventListener('click', ()=>{
 canvasHolder.addEventListener('mouseleave',()=>{
     isMousePressed = false;
 })
+
+
