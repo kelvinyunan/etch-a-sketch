@@ -1,6 +1,6 @@
 .square {
-
-    background-color:lightgray;
+    
+    /*background-color:lightgray;*/
 }
 
 #container {
@@ -9,6 +9,10 @@
     height:750px;
     width:750px;
     margin:auto;
+    background-image: url(../etch-a-sketch/savero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .square:hover {
